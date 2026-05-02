@@ -1,5 +1,6 @@
 import React, { useMemo, useState, useRef } from "react";
 import "./styles.css";
+import { BRAND } from "./brand";
 
 const BANK = [
   // BEGINNER
@@ -200,12 +201,24 @@ function App() {
       {options.map(o => (
         <button key={o.value} className={"pill " + (value === o.value ? "active" : "")} onClick={() => set(o.value)} type="button">{o.label}</button>
       ))}
+    <footer className="attribution">{BRAND.attribution}</footer>
     </div>
   );
 
   if (stage === "setup") {
     return (
       <div className="wrap">
+      <header className="brand-bar">
+        <a
+          href={BRAND.homepage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="brand-logo"
+          aria-label={BRAND.company}
+          dangerouslySetInnerHTML={{ __html: BRAND.logoSvg }}
+        />
+        <span className="brand-chip">Independent tool</span>
+      </header>
         <div className="eyebrow">A quiz · Jito · For DevRel, partners, community education</div>
         <h1>Jito Network Quiz — JitoSOL, MEV & Solana Restaking</h1>
         <p className="lede">A friendly check on how well you understand the Jito stack: JitoSOL, the Block Engine, Bundles, StakeNet, Jito Restaking, NCNs, and TipRouter — drawn from publicly available sources.</p>
@@ -220,6 +233,7 @@ function App() {
         </div>
 
         <div className="footer-note">Public sources: Jito and Jito-Labs documentation, Helius blog (Solana MEV: An Introduction), Kiln (Discover Jito Restaking), Pier Two (TipRouter), QuickNode (Jito Bundles), OKX (Jito Stake Pool overview), Phemex (JITOSOL guide). No data is collected or stored.</div>
+      <footer className="attribution">{BRAND.attribution}</footer>
       </div>
     );
   }
@@ -230,6 +244,17 @@ function App() {
     const reveal = revealed[q.id] !== undefined;
     return (
       <div className="wrap">
+      <header className="brand-bar">
+        <a
+          href={BRAND.homepage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="brand-logo"
+          aria-label={BRAND.company}
+          dangerouslySetInnerHTML={{ __html: BRAND.logoSvg }}
+        />
+        <span className="brand-chip">Independent tool</span>
+      </header>
         <div className="progress"><div style={{ width: `${((idx)/qs.length)*100}%` }} /></div>
         <div className="eyebrow">Question {idx+1} of {qs.length} · {TOPIC_LABEL[q.topic]} · {q.level}</div>
         <div className="card qcard">
@@ -246,6 +271,7 @@ function App() {
           {reveal && <div style={{ marginTop: 14 }}><button className="btn" onClick={next}>{idx + 1 < qs.length ? "Next question" : "See results"}</button></div>}
         </div>
         <div style={{ display:"flex", gap: 10 }}><button className="btn secondary" onClick={restart}>Restart</button></div>
+      <footer className="attribution">{BRAND.attribution}</footer>
       </div>
     );
   }
@@ -264,6 +290,17 @@ function App() {
 
   return (
     <div className="wrap">
+      <header className="brand-bar">
+        <a
+          href={BRAND.homepage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="brand-logo"
+          aria-label={BRAND.company}
+          dangerouslySetInnerHTML={{ __html: BRAND.logoSvg }}
+        />
+        <span className="brand-chip">Independent tool</span>
+      </header>
       <div className="eyebrow">Results</div>
       <h1>{correctCount} / {qs.length} correct · {pct}%</h1>
       <p className="lede">{headline}</p>
@@ -292,6 +329,7 @@ function App() {
       </div>
       <div className="footer-note">Jito-specific detail comes from public Jito documentation and reputable third-party explainers. No private data, no API keys.</div>
       <div className={"toast " + (toast ? "show" : "")}>Results copied to clipboard</div>
+    <footer className="attribution">{BRAND.attribution}</footer>
     </div>
   );
 }
