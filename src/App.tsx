@@ -8,17 +8,17 @@ const BANK = [
     q:"What is JitoSOL?",
     options:["A Solana governance voting receipt token","A Solana liquid staking token from Jito Network","A wrapped SOL bridge representation token","A perpetuals collateral token from a Jito DEX"],
     answer:1,
-    explain:"JitoSOL is the Jito Network's Solana liquid staking token — staked SOL with MEV-boosted yield, public stake pool with around 160 validators." },
+    explain:"JitoSOL is the Jito Network's Solana liquid staking token: staked SOL with MEV-boosted yield, public stake pool with around 160 validators." },
   { id:"b2", topic:"company", level:"beginner",
     q:"Which chain is Jito Network primarily built on?",
     options:["Bitcoin base layer","Ethereum mainnet","Solana mainnet-beta","Aptos mainnet"],
     answer:2,
-    explain:"Jito's stack — Jito-Solana validator client, Block Engine, JitoSOL, Jito Restaking — is Solana-native." },
+    explain:"Jito's stack (Jito-Solana validator client, Block Engine, JitoSOL, Jito Restaking) is Solana-native." },
   { id:"b3", topic:"mev", level:"beginner",
     q:"What does 'MEV' generally refer to on Solana?",
     options:["Multi-execution validator client throughput","Maximal Extractable Value from transaction ordering","Mainnet error variance across Solana epochs","Mining-energy variance for validator hardware"],
     answer:1,
-    explain:"MEV = Maximal Extractable Value, the surplus available from including/ordering transactions — Jito captures and routes a portion of it back to validators and JitoSOL holders." },
+    explain:"MEV = Maximal Extractable Value, the surplus available from including/ordering transactions. Jito captures and routes a portion of it back to validators and JitoSOL holders." },
   { id:"b4", topic:"product", level:"beginner",
     q:"What are 'Jito Bundles'?",
     options:["A set of NFTs auctioned together by Jito validators","Sets of Solana transactions executed sequentially and atomically","A subscription package for Solana RPC and indexer node access","A bonded set of validator stake delegations consolidated into one"],
@@ -33,12 +33,12 @@ const BANK = [
     q:"Who runs validators in the JitoSOL stake pool?",
     options:["A diverse public set of independent validators (~160)","Only Jito Labs core engineering staff and contractors","A single foundation with rotating board-appointed nodes","Anonymous miners selected via a sealed-bid auction"],
     answer:0,
-    explain:"JitoSOL routes stake to a public set of independent Solana validators that meet performance criteria — publicly described as around 160." },
+    explain:"JitoSOL routes stake to a public set of independent Solana validators that meet performance criteria, publicly described as around 160." },
   { id:"b7", topic:"market", level:"beginner",
     q:"Who typically holds JitoSOL?",
     options:["Solely retail wallets bridged in from Ethereum L2s","Retail, DAO treasuries, funds, and integrating dApps","Only Solana validators meeting Jito performance criteria","Only banks that have signed a Jito Labs partnership deal"],
     answer:1,
-    explain:"JitoSOL is widely held — retail, DAO treasuries, crypto-native funds, and dApps integrating staked SOL as collateral." },
+    explain:"JitoSOL is widely held: retail, DAO treasuries, crypto-native funds, and dApps integrating staked SOL as collateral." },
   { id:"b8", topic:"product", level:"beginner",
     q:"What is StakeNet in the Jito ecosystem?",
     options:["A bridge moving JitoSOL between Solana and Ethereum","A high-throughput Layer 2 scaling network on top of Solana","An on-chain delegation framework for the JitoSOL pool","A wallet brand promoted through Jito Foundation grants"],
@@ -48,7 +48,7 @@ const BANK = [
     q:"What is Jito Restaking?",
     options:["A native Solana staking program run by validators","A protocol using staked assets to secure additional networks","A bridge moving staked SOL exposure over to Ethereum","A token unlock and vesting schedule for the JTO airdrop"],
     answer:1,
-    explain:"Jito Restaking lets staked assets be used as collateral securing additional networks (NCNs) on Solana — a Solana analog to the EigenLayer concept." },
+    explain:"Jito Restaking lets staked assets be used as collateral securing additional networks (NCNs) on Solana, a Solana analog to the EigenLayer concept." },
   { id:"b10", topic:"product", level:"beginner",
     q:"What is TipRouter?",
     options:["A Solana NCN distributing Jito MEV tips through restaking","A meme coin associated with the Jito Network's airdrop","A non-custodial wallet maintained by Jito Foundation","A block explorer showing Jito Bundle inclusion history"],
@@ -58,10 +58,10 @@ const BANK = [
     q:"Why might an institution prefer JitoSOL over native staking?",
     options:["Because the JitoSOL stake pool is centrally custodied","For liquid transferable exposure with MEV-boosted yield","Because liquid staking removes all slashing and credit risk","Because JitoSOL pays staking yield in USDC stablecoins"],
     answer:1,
-    explain:"JitoSOL gives a transferable token (liquidity) plus MEV-boosted yield while keeping staking exposure — useful for treasury and integration use cases." },
+    explain:"JitoSOL gives a transferable token (liquidity) plus MEV-boosted yield while keeping staking exposure, useful for treasury and integration use cases." },
   { id:"b12", topic:"company", level:"beginner",
     q:"Is Jito-Solana the same as JitoSOL?",
-    options:["Yes — Jito-Solana is just a marketing alias for JitoSOL","Yes — both refer to the JitoSOL stake pool's token","No — Jito-Solana is the validator client, JitoSOL is the LST","No — they are competing forks of the Solana validator"],
+    options:["Yes, Jito-Solana is just a marketing alias for JitoSOL","Yes, both refer to the JitoSOL stake pool's token","No, Jito-Solana is the validator client, JitoSOL is the LST","No, they are competing forks of the Solana validator"],
     answer:2,
     explain:"Jito-Solana is the MEV-aware Solana validator client. JitoSOL is the liquid staking token. They are part of the same network but distinct products." },
 
@@ -83,7 +83,7 @@ const BANK = [
     explain:"Public sources describe a JitoSOL stake pool of roughly 160 validators." },
   { id:"i4", topic:"restaking", level:"intermediate",
     q:"What is an NCN in Jito Restaking?",
-    options:["Network Consensus Node — a Solana validator running Jito-Solana","Node Consensus Network — a network secured by restaked collateral","Non-Custodial Notary — a Solana signing service for institutions","New Coin Notice — a JTO governance proposal listing process"],
+    options:["Network Consensus Node: a Solana validator running Jito-Solana","Node Consensus Network: a network secured by restaked collateral","Non-Custodial Notary: a Solana signing service for institutions","New Coin Notice: a JTO governance proposal listing process"],
     answer:1,
     explain:"An NCN (Node Consensus Network) is a service or network secured by restaked collateral on Solana, with operators providing validation." },
   { id:"i5", topic:"restaking", level:"intermediate",
@@ -93,7 +93,7 @@ const BANK = [
     explain:"Public TipRouter docs describe a 3% fee on tip revenue, with portions distributed to vault operators." },
   { id:"i6", topic:"restaking", level:"intermediate",
     q:"What does TipRouter route to vault operators in its public design?",
-    options:["The full 100% of incoming MEV tip revenue per epoch","Around 0.15% of tip revenue, as one piece of distribution","Only governance tokens, never any SOL-denominated rewards","Nothing — operators of SOL vaults do not earn from tips"],
+    options:["The full 100% of incoming MEV tip revenue per epoch","Around 0.15% of tip revenue, as one piece of distribution","Only governance tokens, never any SOL-denominated rewards","Nothing, operators of SOL vaults do not earn from tips"],
     answer:1,
     explain:"Public materials describe a structure where 0.15% of tip revenue flows to SOL vault operators as part of the distribution." },
   { id:"i7", topic:"product", level:"intermediate",
@@ -108,7 +108,7 @@ const BANK = [
     explain:"Tips flow to validators running Jito-Solana; JitoSOL holders benefit indirectly via the stake pool's MEV-boosted yield." },
   { id:"i9", topic:"market", level:"intermediate",
     q:"What is a key difference between JitoSOL and Marinade's mSOL?",
-    options:["JitoSOL is on Ethereum, mSOL is on Solana mainnet-beta","JitoSOL leans on MEV uplift; mSOL is a different LST design","mSOL is a bridged wrapper of JitoSOL with no separate pool","There is no meaningful difference — they share a stake pool"],
+    options:["JitoSOL is on Ethereum, mSOL is on Solana mainnet-beta","JitoSOL leans on MEV uplift; mSOL is a different LST design","mSOL is a bridged wrapper of JitoSOL with no separate pool","There is no meaningful difference, they share a stake pool"],
     answer:1,
     explain:"Both are Solana LSTs, but JitoSOL's value proposition leans on MEV uplift via the Block Engine; mSOL is a separate liquid staking design from Marinade." },
   { id:"i10", topic:"product", level:"intermediate",
@@ -130,24 +130,24 @@ const BANK = [
   // ── EXPERT ──
   { id:"e1", topic:"company", level:"expert",
     q:"Why does the JitoSOL pool's validator-set composition matter for institutional holders?",
-    options:["It does not — pool composition is purely a marketing detail","Operator concentration and skip-rate distribution affect risk","Validators in the pool unilaterally set the JitoSOL/SOL price","Pool composition only matters for the Solana Foundation budget"],
+    options:["It does not, pool composition is purely a marketing detail","Operator concentration and skip-rate distribution affect risk","Validators in the pool unilaterally set the JitoSOL/SOL price","Pool composition only matters for the Solana Foundation budget"],
     answer:1,
-    explain:"At size, operator concentration drives correlated failure risk and skip-rate distribution drives realized yield — both matter to institutional sizing." },
+    explain:"At size, operator concentration drives correlated failure risk and skip-rate distribution drives realized yield. Both matter to institutional sizing." },
   { id:"e2", topic:"mev", level:"expert",
     q:"In what way is MEV uplift over native staking variable?",
-    options:["It is not variable — Jito documents a fixed staking yield bonus","It depends on Solana network activity, volatility, and engine flow","It is always exactly five percent on top of base validator yield","It is set quarterly by Jito Labs through a JTO governance vote"],
+    options:["It is not variable, Jito documents a fixed staking yield bonus","It depends on Solana network activity, volatility, and engine flow","It is always exactly five percent on top of base validator yield","It is set quarterly by Jito Labs through a JTO governance vote"],
     answer:1,
-    explain:"MEV revenue is a function of network activity and trading flow — calm weeks compress the spread, volatile weeks expand it." },
+    explain:"MEV revenue is a function of network activity and trading flow. Calm weeks compress the spread, volatile weeks expand it." },
   { id:"e3", topic:"restaking", level:"expert",
     q:"What is a key risk introduced when an LST holder layers on Jito Restaking?",
-    options:["The underlying JitoSOL token is burned and replaced with JTO","Vault smart-contract risk and per-NCN slashing-equivalent terms","Mandatory KYC enforced by Jito Foundation on every vault user","No new risk — restaking is purely additive to base staking yield"],
+    options:["The underlying JitoSOL token is burned and replaced with JTO","Vault smart-contract risk and per-NCN slashing-equivalent terms","Mandatory KYC enforced by Jito Foundation on every vault user","No new risk, restaking is purely additive to base staking yield"],
     answer:1,
     explain:"Restaking adds a separate risk surface: vault contract risk and any per-NCN slashing-equivalent conditions you opt into." },
   { id:"e4", topic:"market", level:"expert",
     q:"For a fund evaluating JitoSOL exposure, which is the most operational risk?",
     options:["Pure JitoSOL spot price volatility relative to native SOL","Secondary-market liquidity for JitoSOL/SOL at the fund's exit size","Solana mainnet block-size limits constraining stake-pool growth","DNS issues affecting the Jito Network public-facing dashboard"],
     answer:1,
-    explain:"At fund size, the dominant operational risk is exiting JitoSOL into SOL on a stress day at acceptable slippage — not the headline yield." },
+    explain:"At fund size, the dominant operational risk is exiting JitoSOL into SOL on a stress day at acceptable slippage, not the headline yield." },
   { id:"e5", topic:"product", level:"expert",
     q:"What's the architectural reason Block Engine relays delay txns ~200ms?",
     options:["Random jitter introduced for anti-spam protections at the relayer","To allow searcher bundle formation around incoming user flow","To reduce Solana priority-fee gas costs for end users at scale","An upstream Solana validator constraint limits forwarding speed"],
@@ -157,10 +157,10 @@ const BANK = [
     q:"Why do operators in the JitoSOL pool care about hardware quality?",
     options:["Because dedicated hardware is required for Jito Foundation grants","Skip rate driven by hardware quality affects pool yield and inclusion","Tax treatment of validator income depends on owning hardware directly","Solana Foundation rules require bare metal and disallow any cloud use"],
     answer:1,
-    explain:"Skip rate depends heavily on single-thread CPU, NVMe IOPS, and network quality — and skip rate is one of the primary signals influencing pool yield and inclusion." },
+    explain:"Skip rate depends heavily on single-thread CPU, NVMe IOPS, and network quality, and skip rate is one of the primary signals influencing pool yield and inclusion." },
   { id:"e7", topic:"restaking", level:"expert",
     q:"How is TipRouter's distribution model relevant to operator economics?",
-    options:["It is irrelevant — operator marginal revenue is set entirely by base","The published 3%/0.15% structure changes how operators model revenue","It sets Solana priority-fee gas levels that operators must pay per slot","It sets validator vote weights used in Jito-Solana consensus tie-breaks"],
+    options:["It is irrelevant, operator marginal revenue is set entirely by base","The published 3%/0.15% structure changes how operators model revenue","It sets Solana priority-fee gas levels that operators must pay per slot","It sets validator vote weights used in Jito-Solana consensus tie-breaks"],
     answer:1,
     explain:"Operators that don't model TipRouter into marginal revenue under-count both the upside (vault op share) and the risk surface (NCN responsibilities)." },
   { id:"e8", topic:"mev", level:"expert",
@@ -170,14 +170,14 @@ const BANK = [
     explain:"Conservative treasuries usually size on calm-week yield assumptions and treat volatile-week MEV as upside, not budget." },
   { id:"e9", topic:"market", level:"expert",
     q:"For an integrating dApp adding JitoSOL, what UX concern is non-trivial?",
-    options:["No real UX concerns — JitoSOL behaves identically to native SOL","Communicating the JitoSOL/SOL exchange rate and depeg risk to users","Choosing a Jito brand color palette that matches the dApp's theme","Sizing the JitoSOL logo correctly across mobile and desktop layouts"],
+    options:["No real UX concerns, JitoSOL behaves identically to native SOL","Communicating the JitoSOL/SOL exchange rate and depeg risk to users","Choosing a Jito brand color palette that matches the dApp's theme","Sizing the JitoSOL logo correctly across mobile and desktop layouts"],
     answer:1,
-    explain:"LSTs are a UX problem as much as a financial product — communicating the JitoSOL/SOL ratio and depeg dynamics to users matters as much as the integration code." },
+    explain:"LSTs are a UX problem as much as a financial product. Communicating the JitoSOL/SOL ratio and depeg dynamics to users matters as much as the integration code." },
   { id:"e10", topic:"product", level:"expert",
     q:"Why is StakeNet relevant when discussing JitoSOL operator quality?",
     options:["Because StakeNet itself runs Solana validators in the JitoSOL pool","It provides on-chain delegation logic that allocates stake to operators","Because StakeNet issues NFT certificates for top-performing validators","Because StakeNet audits centralized exchanges that custody JitoSOL"],
     answer:1,
-    explain:"StakeNet is the on-chain delegation framework that drives stake allocation logic — the lens through which operator quality translates into pool-level yield." },
+    explain:"StakeNet is the on-chain delegation framework that drives stake allocation logic, the lens through which operator quality translates into pool-level yield." },
   { id:"e11", topic:"restaking", level:"expert",
     q:"What's the cleanest way to describe NCN risk vs. base staking risk?",
     options:["NCN risk and base Solana staking risk are economically identical","Per-NCN risk stacks additively on top of base Solana staking risk","NCN risk is structurally always lower than base Solana staking risk","NCN participation is illegal in most major regulatory jurisdictions"],
@@ -185,9 +185,9 @@ const BANK = [
     explain:"NCN risk is additive on top of base staking: each opted-into NCN carries its own contract, operator, and (where relevant) slashing-equivalent risks." },
   { id:"e12", topic:"company", level:"expert",
     q:"When does a Solana validator setup become obviously hardware-bound?",
-    options:["Never — modern Solana validators are network-bound, not hardware","When skip rate climbs and CPU/IOPS saturate during leader windows","Only on testnet clusters running pre-release Jito-Solana validator builds","Only at midnight UTC, when Solana epoch boundaries place extra load"],
+    options:["Never, modern Solana validators are network-bound, not hardware","When skip rate climbs and CPU/IOPS saturate during leader windows","Only on testnet clusters running pre-release Jito-Solana validator builds","Only at midnight UTC, when Solana epoch boundaries place extra load"],
     answer:1,
-    explain:"Persistent skip rate combined with CPU/IOPS saturation during leader windows is the textbook signature of a hardware-bound validator — the case where dedicated infra usually shows up well." },
+    explain:"Persistent skip rate combined with CPU/IOPS saturation during leader windows is the textbook signature of a hardware-bound validator, the case where dedicated infra usually shows up well." },
 ];
 
 const TOPIC_LABEL = {
@@ -278,7 +278,7 @@ function App() {
 
   const summary = useMemo(() => {
     const lines = [];
-    lines.push("Jito Network Quiz — JitoSOL, MEV & Solana Restaking");
+    lines.push("Jito Network Quiz: JitoSOL, MEV & Solana Restaking");
     lines.push(`Length: ${qs.length}, Level: ${length === 30 && level !== 'expert' ? 'mixed' : level}`);
     lines.push(`Score: ${correctCount} / ${qs.length}`);
     lines.push("");
@@ -320,8 +320,8 @@ function App() {
         <span className="brand-chip">Independent tool</span>
       </header>
         <div className="eyebrow">A quiz · Jito · For DevRel, partners, community education</div>
-        <h1>Jito Network Quiz — JitoSOL, MEV & Solana Restaking</h1>
-        <p className="lede">A friendly check on how well you understand the Jito stack: JitoSOL, the Block Engine, Bundles, StakeNet, Jito Restaking, NCNs, and TipRouter — drawn from publicly available sources.</p>
+        <h1>Jito Network Quiz: JitoSOL, MEV & Solana Restaking</h1>
+        <p className="lede">A friendly check on how well you understand the Jito stack: JitoSOL, the Block Engine, Bundles, StakeNet, Jito Restaking, NCNs, and TipRouter, drawn from publicly available sources.</p>
 
         <div className="card">
           <label>Length</label>
@@ -380,8 +380,8 @@ function App() {
   const headline =
     pct >= 90 ? "Genuinely sharp on the Jito stack." :
     pct >= 70 ? "Solid working understanding." :
-    pct >= 50 ? "Reasonable grasp — some good rabbit holes ahead." :
-    "Plenty of room to learn — this stuff rewards curiosity.";
+    pct >= 50 ? "Reasonable grasp. Some good rabbit holes ahead." :
+    "Plenty of room to learn. This stuff rewards curiosity.";
 
   const topicsSorted = Object.entries(topicBreakdown).map(([t, v]) => ({ t, ...v, pct: v.correct / v.total }));
   topicsSorted.sort((a,b) => b.pct - a.pct);
@@ -415,11 +415,11 @@ function App() {
       </div>
       <div className="card">
         <h2>What you understand well</h2>
-        <div style={{ color: "#cdd3df", fontSize: 14, lineHeight: 1.55 }}>{strong.length ? strong.join(" · ") : "Nothing dominant yet — try a longer quiz at a higher level."}</div>
+        <div style={{ color: "#cdd3df", fontSize: 14, lineHeight: 1.55 }}>{strong.length ? strong.join(" · ") : "Nothing dominant yet. Try a longer quiz at a higher level."}</div>
       </div>
       <div className="card">
         <h2>What's worth learning next</h2>
-        <div style={{ color: "#cdd3df", fontSize: 14, lineHeight: 1.55 }}>{weak.length ? weak.join(" · ") : "All topics roughly even — the expert tier will pressure-test the edges."}</div>
+        <div style={{ color: "#cdd3df", fontSize: 14, lineHeight: 1.55 }}>{weak.length ? weak.join(" · ") : "All topics roughly even. The expert tier will pressure-test the edges."}</div>
       </div>
       <div className="card">
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
